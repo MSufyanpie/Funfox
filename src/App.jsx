@@ -1,14 +1,16 @@
 
 import './App.css'
+import Week1 from './Components/Week1'
 
 function App() {
   
   return (
-    <>
-      <div>
-       
-      </div>
-    </>
+    
+      
+       <Week1>
+       </Week1>
+      
+    
   )
 }
 
