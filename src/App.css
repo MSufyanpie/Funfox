@@ -1,42 +1,99 @@
 #root {
-  max-width: 1280px;
+  
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navigation-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.app-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100vh;
 }
 
-.card {
-  padding: 2em;
+.left-column,
+.right-column {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
 }
 
-.read-the-docs {
-  color: #888;
+.week2-container {
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Position relative for z-index to work */
 }
+
+.image {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 30vh; /* adjust margin as needed */
+}
+
+.image1 {
+  width: 100px;
+  height: 100px;
+  margin-bottom: -50px; /* Adjust margin as needed to overlap with Week2 */
+  z-index: 1; /* Ensure Image1 appears above Week2 */
+}
+
+.navigation-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.left-navigation,
+.right-navigation {
+  width: 50px; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.navigation-button {
+  margin: 0 10px; /* Adjust as needed */
+}
+
+.week2-container > div {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.week2-container > div > img {
+  margin: 0 5px;
+}
+
+.left-image {
+  position: absolute;
+  left: 0;
+}
+
+.middele-div {
+  position: relative;
+  left: 40%;
+}
+
+.right-image {
+  position: absolute;
+  right: 0;
+}
+
